@@ -688,7 +688,7 @@ from huggingface_hub import login
 
 class Coco_Dataset_VQA(Dataset):
     def __init__(self, img_root=None, ann_root=None, split="train", downstream=True):
-       hug_token = "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"
+       hug_token = xxxx
        login(token = hug_token)
        self.img_root = "./coco_images.h5"
        self.downstream = downstream
