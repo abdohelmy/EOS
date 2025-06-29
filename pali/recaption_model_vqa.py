@@ -50,8 +50,7 @@ class blip_recaption(Blip2ForConditionalGeneration):
         # configuration = Blip2Config()
         
         super().__init__(configuration)
-        hug_token = "xxxx"
-        login(token = hug_token)
+   
         # self.model_blip = Blip2ForConditionalGeneration.from_pretrained("gauthampughazhendhi/blip-2-pokemon-captions-fine-tuned", cache_dir = "./new_blip2_pok")
         self.processor = AutoProcessor.from_pretrained("google/paligemma-3b-ft-cococap-224")
         self.model_blip = AutoModelForPreTraining.from_pretrained("google/paligemma-3b-ft-cococap-224", cache_dir="./gamma")

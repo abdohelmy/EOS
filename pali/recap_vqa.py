@@ -1762,8 +1762,7 @@ if __name__ == "__main__":
     SEED = 101
     torch.manual_seed(SEED)
     # os.environ["NCCL_DEBUG"] = "INFO"
-    hug_token = "xxxx"
-    login(token = hug_token)
+
     print("Custom params being set")
     parser = argparse.ArgumentParser(description="Example script with a boolean flag.")
 
